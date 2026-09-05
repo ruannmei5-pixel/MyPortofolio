@@ -1,0 +1,419 @@
+You are an expert frontend architect and UI/UX designer.
+
+We are building a personal portfolio website called:
+
+# GILL — FROM MINUS TO PEAK
+
+The website belongs to:
+
+**Ragil Vahlevi**
+Nickname: **Gill**
+
+Current status:
+**Student of Computer, Network & Telecommunication Engineering (TJKT)**
+
+The target audience is primarily:
+**Recruiters and companies.**
+
+---
+
+## TECH STACK
+
+Use:
+
+* Astro
+* TypeScript
+* Tailwind CSS
+
+Do not introduce React, Vue, Svelte, or another frontend framework unless there is a strong technical reason.
+
+The project must remain lightweight and performant.
+
+Backend integration with Laravel will be added later.
+
+For now, build the frontend architecture in a way that can easily consume a Laravel REST API in the future.
+
+---
+
+# CORE VISUAL CONCEPT
+
+The website concept is:
+
+# FROM MINUS TO PEAK
+
+This represents Gill's personal journey.
+
+He did not start from an ideal position.
+
+He originally came from an IPA/science-oriented background, entered TJKT after failing to enter his desired school, initially had little interest in technology, and gradually discovered his direction through learning, self-reflection, leadership, competitions, and real projects.
+
+The website should communicate:
+
+* growth
+* persistence
+* curiosity
+* experimentation
+* technical ability
+* self-development
+* continuous learning
+
+The website must NOT communicate:
+
+"I have already reached the peak."
+
+Instead:
+
+"I am still climbing."
+
+---
+
+# DESIGN STYLE
+
+Use:
+
+**Dark Futuristic Developer Portfolio**
+
+Combine:
+
+* modern developer UI
+* subtle terminal aesthetics
+* futuristic interfaces
+* technical diagrams
+* subtle mountain/elevation metaphors
+* cinematic transitions
+* clean typography
+* professional recruiter-friendly layout
+
+The mountain should be a metaphor.
+
+DO NOT make the website look like a hiking or outdoor website.
+
+Avoid excessive neon.
+
+Avoid excessive glowing effects.
+
+Avoid visual clutter.
+
+The design should look premium and professional.
+
+---
+
+# COLOR DIRECTION
+
+Use a dark base.
+
+Prefer:
+
+* near-black background
+* dark gray surfaces
+* white/light typography
+* one restrained accent color
+* subtle borders
+* subtle gradients
+
+Do not use many different colors.
+
+Create CSS variables/design tokens so the theme can easily be changed later.
+
+---
+
+# TYPOGRAPHY
+
+Use a modern sans-serif font for normal content.
+
+Use a monospace font selectively for:
+
+* terminal
+* system information
+* technical labels
+* commands
+* metadata
+
+Do not make the entire website monospace.
+
+Typography must remain highly readable.
+
+---
+
+# LAYOUT
+
+Create a strong visual hierarchy.
+
+The website should feel like one continuous journey rather than a collection of unrelated cards.
+
+Use:
+
+* full-width sections
+* generous spacing
+* strong typography
+* subtle grid systems
+* responsive containers
+* technical metadata
+* section numbering
+
+Possible section identifiers:
+
+01
+02
+03
+04
+05
+
+Use them subtly.
+
+---
+
+# NAVIGATION
+
+Create a modern navigation system.
+
+Desktop:
+
+* Logo: GILL
+* About
+* Journey
+* Skills
+* Projects
+* Achievements
+* Contact
+* AI
+
+Mobile:
+
+Use a clean mobile menu.
+
+Navigation should remain accessible while scrolling.
+
+---
+
+# HERO PLACEHOLDER
+
+Create the hero structure but do not write the complete final story yet.
+
+Use:
+
+RAGIL VAHLEVI
+
+GILL
+
+FROM MINUS TO PEAK
+
+TJKT STUDENT · TECHNOLOGY ENTHUSIAST
+
+WEB DEVELOPMENT · LINUX · NETWORKING · AI
+
+Primary button:
+
+BEGIN MY JOURNEY
+
+Secondary button:
+
+ASK GILL AI
+
+Use a temporary profile image placeholder.
+
+The profile image must be easy to replace later.
+
+---
+
+# COMPONENT ARCHITECTURE
+
+Create reusable components.
+
+Suggested structure:
+
+src/
+├── components/
+│   ├── layout/
+│   ├── navigation/
+│   ├── hero/
+│   ├── sections/
+│   ├── cards/
+│   ├── terminal/
+│   └── ui/
+│
+├── layouts/
+├── pages/
+├── styles/
+├── data/
+└── types/
+
+Do not put everything inside one giant Astro file.
+
+Keep components modular.
+
+---
+
+# DATA ARCHITECTURE
+
+For now, create local TypeScript data structures.
+
+Examples:
+
+Profile
+Journey
+Skills
+Projects
+Experience
+Achievements
+Education
+
+The data must be separated from UI components.
+
+This is important because later the local data will be replaced or supplemented by Laravel API data.
+
+---
+
+# DESIGN SYSTEM
+
+Create reusable design tokens for:
+
+* colors
+* spacing
+* typography
+* borders
+* radius
+* shadows
+* transitions
+* container widths
+
+Create reusable UI components where appropriate:
+
+* Button
+* Badge
+* SectionHeader
+* Card
+* StatusIndicator
+* TechTag
+
+Avoid overengineering.
+
+---
+
+# ANIMATION
+
+Use subtle animations only.
+
+Initial animations can include:
+
+* fade-in
+* slide-up
+* terminal-style text reveal
+* hover transitions
+* navigation transitions
+
+Do not add heavy animation libraries unless necessary.
+
+Prioritize performance.
+
+Animations should respect:
+
+prefers-reduced-motion.
+
+---
+
+# RESPONSIVENESS
+
+Design mobile-first.
+
+The website must work correctly on:
+
+* mobile
+* tablet
+* laptop
+* desktop
+
+Do not simply shrink the desktop layout.
+
+Reconsider layout hierarchy for small screens.
+
+---
+
+# PERFORMANCE
+
+Important requirements:
+
+* minimal JavaScript
+* optimized assets
+* lazy loading where appropriate
+* semantic HTML
+* avoid unnecessary client-side rendering
+* avoid large dependencies
+* maintain good Lighthouse performance
+
+Astro's static rendering should be used wherever possible.
+
+---
+
+# ACCESSIBILITY
+
+Implement:
+
+* semantic HTML
+* keyboard navigation
+* visible focus states
+* accessible buttons
+* appropriate aria labels
+* sufficient text contrast
+* reduced motion support
+
+Do not sacrifice accessibility for visual effects.
+
+---
+
+# SEO FOUNDATION
+
+Create basic SEO infrastructure:
+
+* title
+* meta description
+* Open Graph metadata
+* canonical URL placeholder
+* favicon placeholder
+* semantic headings
+
+Do not finalize the actual SEO copy yet.
+
+---
+
+# IMPORTANT
+
+Do NOT implement the Laravel backend yet.
+
+Do NOT implement the AI yet.
+
+Do NOT implement the Filament admin yet.
+
+Do NOT create fake project data.
+
+Do NOT invent additional achievements or experience.
+
+Do NOT claim Gill is a professional or expert.
+
+Do NOT create fake statistics.
+
+Do NOT create fake testimonials.
+
+Do NOT create fake GitHub activity.
+
+The goal of this prompt is ONLY:
+
+1. establish the Astro project
+2. establish the design system
+3. establish reusable components
+4. establish the page architecture
+5. establish local data structures
+6. create the initial visual foundation
+7. create the initial hero structure
+8. make everything responsive and performant
+
+At the end, verify that the project:
+
+* installs successfully
+* runs successfully
+* builds successfully
+* has no obvious TypeScript errors
+* has no broken imports
+* has no unnecessary dependencies
+
+Do not proceed to future features unless the foundation is stable.
